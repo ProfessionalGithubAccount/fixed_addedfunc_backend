@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="assignment-container">
+    <div class="assignment-header">
+      <h2>Assignment</h2>
+      <div class="assignment-dates">
+        <p><strong>Deadline:</strong> {{ deadline }}</p>
+        <p><strong>File:</strong> {{ fileName }}</p>
+        <div class="question-file-section">
+          <button class="file-button" (click)="viewAssignmentFile()">
+            <i class="icon">📄</i> View
+          </button>
+          <button class="file-button" (click)="downloadAssignmentFile()">
+            <i class="icon">⬇️</i> Download
+          </button>          
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="submission-status">
+      <h3>Submission Status</h3>
+      <table>
+        <tr>
+          <td>Submission Status</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Grading Status</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>File Submissions</td>
+          <td>
+            <button class="file-uploaded">
+              <textarea name="" id="" cols="55" rows="8"></textarea>
+            </button>
+          </td>
+        </tr>
+      </table>
+      <div class="save-cancel-buttons">
+        <button class="save-button">Submit</button>
+        <!-- <button class="cancel-button">Cancel</button> -->
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
